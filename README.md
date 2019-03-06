@@ -1,6 +1,5 @@
+>Un poco de historia ¿Que es redis? https://es.wikipedia.org/wiki/Redis
 # Instalación de Redis
-
-## ¿Que es redis? https://es.wikipedia.org/wiki/Redis
 
 > Entrar ha esta url: https://github.com/MicrosoftArchive/redis/releases "Descargar la versión (3.2.100)"
 
