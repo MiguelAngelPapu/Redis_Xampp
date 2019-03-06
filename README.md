@@ -1,6 +1,6 @@
 # Instalación de Redis
 
-[^Nota]: https://github.com/MicrosoftArchive/redis/releases
+> Entrar ha esta url: https://github.com/MicrosoftArchive/redis/releases
 
 ------
 ![Instaladores](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/Instaladores.png)
@@ -30,7 +30,7 @@
 
 ------
 
-[^Nota]: NO CERRA LA CONSOLA DEL SERVIDOR  DE REDIS 'Para utilizar el cliente de redis tiene que estar ejecutando el servidor. Mas adelante configuraremos una variable del sistema de windows para no inicializar dos terminales'
+> NO CERRA LA CONSOLA DEL SERVIDOR  DE REDIS 'Para utilizar el cliente de redis tiene que estar ejecutando el servidor. Mas adelante configuraremos una variable del sistema de windows para no inicializar dos terminales'
 
 ------
 
@@ -73,11 +73,11 @@ info
 
 ------
 
-[^Nota]: Descargar el dll según la version del Redis y PHP obtenida en las instrucciones dadas anteriormente.
+> Descargar el dll según la version del Redis y PHP obtenida en las instrucciones dadas anteriormente.
 
 # Instalación del dll para Xampp
 
-[Entra ha esta url]: https://pecl.php.net/package/redis	"Descargar la extensión del xampp según la versión del redis y del php "
+> Entrar ha esta url: https://pecl.php.net/package/redis "Descargar la extensión del xampp según la versión del redis y del php "
 
 ![Vercion del redis](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/ddl.png)
 
@@ -106,12 +106,12 @@ info
 | 3 | Nos dirigimos al archivo php.ini para habilitar la extension del dll este se encuentra en el panel del xampp | ![php.ini](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/php_ini.png) |
 | 4 | En el archivo php.ini copia y pega el nombre del dll con el atributo **extension=php_redis.dll** y guardamos | ![Extecion DDL](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/php_ini_ddl.png) |
 
-[^Nota]: Reinicie el xampp para resetear la configuración. 
+> Reinicie el xampp para resetear la configuración. 
 
 ------
 ## Librería de redis 'php'
 
-[Entra ha esta url]: https://github.com/nrk/predis	"Descargar la librería del php "
+> Entrar ha esta url: https://github.com/nrk/predis "Descargar la librería del php "
 
 ------
 ![Libreria php](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/libreria_php.png)
@@ -134,7 +134,7 @@ info
 
 ## Ejecutamos la conexion con redis
 
-[^Nota]: Abrimos un editor de texto favorito y colocamos el codigo de conexion
+> Abrimos un editor de texto favorito y colocamos el codigo de conexion
 
 ```php
 <?php
@@ -158,5 +158,5 @@ info
 
 ------
 
-[^Nota]: Para mas información de los comandos con redis [https://github.com/nrk/predis]()
+> Para mas información de los comandos con redis [https://github.com/nrk/predis]()
 
