@@ -190,38 +190,6 @@ info
 
 > Para mas información de los comandos con redis [https://github.com/nrk/predis]
 
-## Redis Base de datos 'comandos'
-
-> Los comandos se ejecutan el cliente de redis 'redis.cli.exe'
-
-------
-
-| Codigo                                                       | Ejemplo                                                      | Descripcion                                                  |
-| :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| set  "Nombre de la llave"  "Descripcion de la llave"         | set  "computador" "PC"                                       | Guardar los datos en la ram                                  |
-| get "nombre de la llave"                                     | get "computador"                                             | Buscar el dato por la llave                                  |
-| keys *                                                       | keys *                                                       | Mostrar todos los datos                                      |
-| exists "Nombrede la llave"                                   | exists "computador"                                          | Comprobar si existe un llave con este nombre                 |
-| del "Nombrede la llave"                                      | del "computador"                                             | Eliminar el dato por la llave                                |
-| mget "Nombrede la llave" "Descripcion de la llave" "Nombre de la llave" "Descripcion de la llave" | mget "computador" "PC" "computador2" "Portatil"              | Guardar varios datos a la vez                                |
-| mset "Nombrede la llave" "Nombrede la llave"                 | mset "computador" "computador2"                              | Buscar varios datos por la llave                             |
-| hmset "Nombrede la llave" "Nombre de la descripcion del componente" "valor"  "Nombre de la descripcion del componente" "valor" | hmset "computador" "ram" "4gb"  "pantalla" "5.5px" "procesador" "intel core i7" | Guardar datos y el nombre de los componentes y su valor      |
-| hmget "Nombrede la llave" "Nombre de la descripcion del componente" "Nombre de la descripcion del componente" | hmget "computador" "ram" "pantalla"                          | Buscar dentro de la llave y de varios componentes            |
-| hget "Nombrede la llave" "Nombre de la descripcion del componente" | hget "computador" "ram"                                      | Busca dentro de la llave y el componente                     |
-| hgetall "Nombrede la llave"                                  | hgetall "computador"                                         | Buscar por la llave  todos los componentes                   |
-| hdel "Nombrede la llave" "Nombre de la descripcion del componente" | hdel "computador" "ram"                                      | Eliminar el componente segun la llave                        |
-| lpush "Nombrede la llave" "Subcategoria"                     | lpush "computador" "asus"                                    | Crea un paquete y sus categorias ('Agregar otra subcategoria repetir la llave pero otro subategoria ') |
-| rpush "Nombrede la llave" "Subcategoria"                     | rpush "computador" "php"                                     | Crea un paquete y sus categorias ('Agregar otra subcategoria repetir la llave pero otro subategoria ')  NOTA= Nose cual es la diferesncia |
-| lrange "Nombrede la llave" 0 1                               | lrange "computador" 0 1                                      | Busca las subcategorias de la llave y mustra los  primeros 0 - 1 |
-| lindex "Nombrede la llave" 0                                 | lindex "computador" 0                                        | Busca las subcategoriaspor el indice segun la llave          |
-| sadd "Nombrede la llave" "value" "value" "value"             | sadd "celulares" "huawei" "lenovo" "xiaomi"                  | Guarda varios datos a la vez segun la llave                  |
-| smembers "Nombrede la llave"                                 | smembers "celulares"                                         | Busca todo los registros segun la llave                      |
-| zadd "Nombrede la llave" "value" "Subcategoria"              | zadd "celulares" 3 "huawei"                                  | Guarda la subcategoria y cuantos hay segun la llave          |
-| zrange "Nombrede la llave" 0 1                               | zrange "celulares" 0 1                                       | Busca las subcategorias de la llave y mustra los  primeros 0 - 1 |
-| zrange "Nombrede la llave" 0 1 withscores                    | zrange "celulares" 0 1 withscores                            | Busca las subcategorias de la llave y mustra los  primeros 0 - 1 y muestra el valor asignado |
-
-> Para mas información de los comandos con redis [https://github.com/nrk/predis]
-
 ## Contenido del archivo 'Redis-x64-3.2.100.exe' (OPCIONAL)
 
 > Advertencia esta paso es opcional ya que al prender el equipo siempre se ejecutara el redis del servidor
