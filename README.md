@@ -1,6 +1,6 @@
 # Instalación de Redis
 
-> Entrar ha esta url: https://github.com/MicrosoftArchive/redis/releases
+> Entrar ha esta url: https://github.com/MicrosoftArchive/redis/releases "Descargar la versión (3.2.100)"
 
 ------
 ![Instaladores](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/Instaladores.png)
