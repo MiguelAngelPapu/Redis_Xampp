@@ -190,3 +190,67 @@ info
 
 > Para mas información de los comandos con redis [https://github.com/nrk/predis]
 
+## Redis Base de datos 'comandos'
+
+> Los comandos se ejecutan el cliente de redis 'redis.cli.exe'
+
+------
+
+| Codigo                                                       | Ejemplo                                                      | Descripcion                                                  |
+| :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| set  "Nombre de la llave"  "Descripcion de la llave"         | set  "computador" "PC"                                       | Guardar los datos en la ram                                  |
+| get "nombre de la llave"                                     | get "computador"                                             | Buscar el dato por la llave                                  |
+| keys *                                                       | keys *                                                       | Mostrar todos los datos                                      |
+| exists "Nombrede la llave"                                   | exists "computador"                                          | Comprobar si existe un llave con este nombre                 |
+| del "Nombrede la llave"                                      | del "computador"                                             | Eliminar el dato por la llave                                |
+| mget "Nombrede la llave" "Descripcion de la llave" "Nombre de la llave" "Descripcion de la llave" | mget "computador" "PC" "computador2" "Portatil"              | Guardar varios datos a la vez                                |
+| mset "Nombrede la llave" "Nombrede la llave"                 | mset "computador" "computador2"                              | Buscar varios datos por la llave                             |
+| hmset "Nombrede la llave" "Nombre de la descripcion del componente" "valor"  "Nombre de la descripcion del componente" "valor" | hmset "computador" "ram" "4gb"  "pantalla" "5.5px" "procesador" "intel core i7" | Guardar datos y el nombre de los componentes y su valor      |
+| hmget "Nombrede la llave" "Nombre de la descripcion del componente" "Nombre de la descripcion del componente" | hmget "computador" "ram" "pantalla"                          | Buscar dentro de la llave y de varios componentes            |
+| hget "Nombrede la llave" "Nombre de la descripcion del componente" | hget "computador" "ram"                                      | Busca dentro de la llave y el componente                     |
+| hgetall "Nombrede la llave"                                  | hgetall "computador"                                         | Buscar por la llave  todos los componentes                   |
+| hdel "Nombrede la llave" "Nombre de la descripcion del componente" | hdel "computador" "ram"                                      | Eliminar el componente segun la llave                        |
+| lpush "Nombrede la llave" "Subcategoria"                     | lpush "computador" "asus"                                    | Crea un paquete y sus categorias ('Agregar otra subcategoria repetir la llave pero otro subategoria ') |
+| rpush "Nombrede la llave" "Subcategoria"                     | rpush "computador" "php"                                     | Crea un paquete y sus categorias ('Agregar otra subcategoria repetir la llave pero otro subategoria ')  NOTA= Nose cual es la diferesncia |
+| lrange "Nombrede la llave" 0 1                               | lrange "computador" 0 1                                      | Busca las subcategorias de la llave y mustra los  primeros 0 - 1 |
+| lindex "Nombrede la llave" 0                                 | lindex "computador" 0                                        | Busca las subcategoriaspor el indice segun la llave          |
+| sadd "Nombrede la llave" "value" "value" "value"             | sadd "celulares" "huawei" "lenovo" "xiaomi"                  | Guarda varios datos a la vez segun la llave                  |
+| smembers "Nombrede la llave"                                 | smembers "celulares"                                         | Busca todo los registros segun la llave                      |
+| zadd "Nombrede la llave" "value" "Subcategoria"              | zadd "celulares" 3 "huawei"                                  | Guarda la subcategoria y cuantos hay segun la llave          |
+| zrange "Nombrede la llave" 0 1                               | zrange "celulares" 0 1                                       | Busca las subcategorias de la llave y mustra los  primeros 0 - 1 |
+| zrange "Nombrede la llave" 0 1 withscores                    | zrange "celulares" 0 1 withscores                            | Busca las subcategorias de la llave y mustra los  primeros 0 - 1 y muestra el valor asignado |
+
+[^Nota]: Para mas información de los comandos con redis [https://github.com/nrk/predis]
+
+## Contenido del archivo 'Redis-x64-3.2.100.exe' (OPCIONAL)
+
+> Advertencia esta paso es opcional ya que al prender el equipo siempre se ejecutara el redis del servidor
+
+------
+
+![Redis ](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/Instalacion_servidor.png)
+
+![Redis ](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/Instalacion_servidor2.png)
+
+![Redis ](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/Instalacion_servidor3.png)
+
+![Redis ](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/Instalacion_servidor4.png)
+
+![Redis ](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/Instalacion_servidor5.png)
+
+![Redis ](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/Instalacion_servidor6.png)
+
+![Redis ](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/Instalacion_servidor7.png)
+
+## Asignación de una variable del sistema 'redis-cli.exe'
+
+| #    | Pasos                                                        | img                                                          |
+| :--- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 1    | Entramos a equipo le damos clic derecho al menú **'Este equipo>propiedades'** | ![Variable Sitema](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/variable_sistema.png) |
+| 2    | Una vez dado click no redirige ha la ventana de sistema buscamos en la parte izquierda de menú la opción que dice Configuración avanzada del sistema | ![Variable Sitema](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/variable_sistema2.png) |
+| 3    | Nos saldrá otra ventana pero esta vez propiedades del sistema buscamos la opción variables de entorno  que se encuentra el parte inferior de la ventana | ![Variable Sitema](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/variable_sistema3.png) |
+| 4    | Entramos en la opción del path y configuramos una variable de acceso | ![Variable Sitema](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/variable_sistema4.png) |
+| 5    | Buscamos la ruta donde alojamos la el servidor del redis y el cliente **'C:\Redis'** y de damos aceptar en todas la ventanas que abrimos | ![Variable Sitema](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/variable_sistema5.png) |
+| 6    | Para comprobar si la variable esta asignada abrimos el **CMD o símbolo del sistema** y escribimos el comando **'redis-cli'** y se ejecutara el cliente de redis si no se activa tendrás que ejecutar primero el **'redis-server'** en caso que no hayas saltado el paso **Contenido del archivo 'Redis-x64-3.2.100.exe' (OPCIONAL)** o reiniciar el equipo | ![Variable Sitema](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/variable_sistema6.png) |
+
+> Para utilizar la consola de redis escribir los comandos **'redis-cli'**  para utilizarlo directamente, pero si en caso que hayas saltado **Contenido del archivo 'Redis-x64-3.2.100.exe' (OPCIONAL)** primero ejecutar el comando **'redis-server'**  desde el **CMD** Windows.
