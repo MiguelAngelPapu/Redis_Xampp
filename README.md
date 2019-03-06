@@ -220,7 +220,7 @@ info
 | zrange "Nombrede la llave" 0 1                               | zrange "celulares" 0 1                                       | Busca las subcategorias de la llave y mustra los  primeros 0 - 1 |
 | zrange "Nombrede la llave" 0 1 withscores                    | zrange "celulares" 0 1 withscores                            | Busca las subcategorias de la llave y mustra los  primeros 0 - 1 y muestra el valor asignado |
 
-[^Nota]: Para mas información de los comandos con redis [https://github.com/nrk/predis]
+> Para mas información de los comandos con redis [https://github.com/nrk/predis]
 
 ## Contenido del archivo 'Redis-x64-3.2.100.exe' (OPCIONAL)
 
