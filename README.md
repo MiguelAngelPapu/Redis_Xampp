@@ -159,7 +159,7 @@ info
 
 ------
 
-# Redis Base de datos 'comandos'
+## Redis Base de datos 'comandos'
 
 > Los comandos se ejecutan el cliente de redis 'redis.cli.exe'
 
