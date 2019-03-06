@@ -161,6 +161,9 @@ info
 
 # Redis Base de datos 'comandos'
 
+> Los comandos se ejecutan el cliente de redis 'redis.cli.exe'
+
+------
 | Codigo                                                       | Ejemplo                                                      | Descripcion                                                  |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | set  "Nombre de la llave"  "Descripcion de la llave"         | set  "computador" "PC"                                       | Guardar los datos en la ram                                  |
