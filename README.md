@@ -97,7 +97,7 @@ info
 
 ------
 
-## Contenido del archivo 'php_redis-3.1.6-7.2-ts-vc15-x64'
+## Contenido del archivo 'php_redis-3.1.6-7.2-nts-vc15-x64'
 
 | #    | Pasos | Img |
 | ---- | ----- | ----- |
