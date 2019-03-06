@@ -1,6 +1,6 @@
 # Instalación de Redis
 
-[^Nota]:https://github.com/MicrosoftArchive/redis/releases
+[^Nota]: https://github.com/MicrosoftArchive/redis/releases
 
 ------
 ![Instaladores](https://github.com/MiguelAngelPapu/Redis_Xampp/blob/master/img/Instaladores.png)
