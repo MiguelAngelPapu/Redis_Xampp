@@ -161,7 +161,7 @@ info
 
 ## Redis Base de datos 'comandos'
 
-> Los comandos se ejecutan el cliente de redis 'redis.cli.exe'
+> Los comandos se ejecutan en el cliente de redis 'redis.cli.exe'
 
 ------
 | Codigo                                                       | Ejemplo                                                      | Descripcion                                                  |
